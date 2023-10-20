@@ -1,13 +1,10 @@
+// Get references to the "Download CV" buttons by their unique IDs
+const downloadButtonHome = document.getElementById("download-cv-home");
+const downloadButtonAbout = document.getElementById("download-cv-about");
+const downloadButtonContact = document.getElementById("download-cv-contact");
 
-
-// Get a reference to the "Download CV" button by its ID
-const downloadButton = document.getElementById("download-cv");
-
-// Add a click event listener to the button
-downloadButton.addEventListener("click", function() {
-    // Specify the URL of the file you want to download
-    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
-
+// Define a common function for downloading the CV
+function downloadCV(fileUrl) {
     fetch(fileUrl)
         .then(response => response.blob())
         .then(blob => {
@@ -28,4 +25,29 @@ downloadButton.addEventListener("click", function() {
         .catch(error => {
             console.error("Error downloading the file:", error);
         });
+}
+
+// Add click event listeners to the buttons
+downloadButtonHome.addEventListener("click", function() {
+    // Specify the URL of the file you want to download
+    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+
+    // Call the common download function
+    downloadCV(fileUrl);
+});
+
+downloadButtonAbout.addEventListener("click", function() {
+    // Specify the URL of the file you want to download for the "About" section
+    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+
+    // Call the common download function
+    downloadCV(fileUrl);
+});
+
+downloadButtonContact.addEventListener("click", function() {
+    // Specify the URL of the file you want to download for the "Contact" section
+    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+
+    // Call the common download function
+    downloadCV(fileUrl);
 });
