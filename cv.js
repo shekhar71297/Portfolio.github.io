@@ -6,7 +6,7 @@ const downloadButton = document.getElementById("download-cv");
 // Add a click event listener to the button
 downloadButton.addEventListener("click", function() {
     // Specify the URL of the file you want to download
-    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+    const fileUrl = "C:\Users\admin\Desktop\porfolio\Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
 
     fetch(fileUrl)
         .then(response => response.blob())
@@ -17,7 +17,7 @@ downloadButton.addEventListener("click", function() {
             // Create a link element for the download
             const downloadLink = document.createElement("a");
             downloadLink.href = objectURL;
-            downloadLink.download = "resume.pdf"; // Specify the default download file name
+            downloadLink.download = "Shekhar P Resume(Pune).pdf"; // Specify the default download file name
 
             // Trigger a click event on the link to initiate the download
             downloadLink.click();
