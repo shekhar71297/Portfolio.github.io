@@ -14,7 +14,7 @@ function downloadCV(fileUrl) {
             // Create a link element for the download
             const downloadLink = document.createElement("a");
             downloadLink.href = objectURL;
-            downloadLink.download = "Shekhar P Resume(Pune).pdf"; // Specify the default download file name
+            downloadLink.download = "Shekhar R Powar Resume(pune).pdf"; // Specify the default download file name
 
             // Trigger a click event on the link to initiate the download
             downloadLink.click();
@@ -30,7 +30,7 @@ function downloadCV(fileUrl) {
 // Add click event listeners to the buttons
 downloadButtonHome.addEventListener("click", function() {
     // Specify the URL of the file you want to download
-    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+    const fileUrl = "Shekhar R Powar Resume(pune).pdf"; // Replace with the actual path to your file
 
     // Call the common download function
     downloadCV(fileUrl);
@@ -38,7 +38,7 @@ downloadButtonHome.addEventListener("click", function() {
 
 downloadButtonAbout.addEventListener("click", function() {
     // Specify the URL of the file you want to download for the "About" section
-    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+    const fileUrl = "Shekhar R Powar Resume(pune).pdf"; // Replace with the actual path to your file
 
     // Call the common download function
     downloadCV(fileUrl);
@@ -46,7 +46,7 @@ downloadButtonAbout.addEventListener("click", function() {
 
 downloadButtonContact.addEventListener("click", function() {
     // Specify the URL of the file you want to download for the "Contact" section
-    const fileUrl = "Shekhar P Resume(Pune).pdf"; // Replace with the actual path to your file
+    const fileUrl = "Shekhar R Powar Resume(pune).pdf"; // Replace with the actual path to your file
 
     // Call the common download function
     downloadCV(fileUrl);
